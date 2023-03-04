@@ -13,7 +13,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'Github Container Registry'
-    repository: 'moutansos/localdirectory'
+    repository: 'moutansos/${containername}'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     buildContext: '.'
